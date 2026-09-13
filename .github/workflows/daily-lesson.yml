@@ -1,0 +1,39 @@
+name: Daily Spanish Lesson
+
+on:
+  schedule:
+    # 13:00 UTC every day - edit to your preferred time.
+    # Use https://crontab.guru to convert; UTC doesn't shift for DST,
+    # so recheck it around March/November if you care about exact timing.
+    - cron: '0 13 * * *'
+  workflow_dispatch: {}  # lets you trigger it manually from the Actions tab
+
+permissions:
+  contents: write  # needed so the workflow can commit the generated page
+
+jobs:
+  build-and-notify:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+
+      - name: Generate today's lesson page
+        run: python generate_lesson.py
+
+      - name: Commit and push lesson page
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add docs/index.html docs/meta.json docs/lessons.json docs/lessons/
+          git diff --staged --quiet || git commit -m "Update daily lesson"
+          git push
+
+      - name: Send Telegram notification
+        run: python send_telegram.py
+        env:
+          TELEGRAM_BOT_TOKEN: ${{ secrets.TELEGRAM_BOT_TOKEN }}
+          TELEGRAM_CHAT_ID: ${{ secrets.TELEGRAM_CHAT_ID }}
