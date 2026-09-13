@@ -1,14 +1,71 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Lecciones de español</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Lecciones de español</title>
+<style>
+
+  :root { color-scheme: light dark; }
+  body {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+    max-width: 700px;
+    margin: 40px auto;
+    padding: 0 20px 60px;
+    line-height: 1.6;
+  }
+  .tag {
+    display: inline-block;
+    background: #e8edff;
+    color: #2a3a7a;
+    padding: 3px 10px;
+    border-radius: 12px;
+    font-size: 0.8em;
+    margin-bottom: 14px;
+  }
+  h1 { font-size: 1.35em; margin-top: 0; }
+  .card {
+    border: 1px solid #ddd;
+    border-radius: 12px;
+    padding: 20px;
+    margin: 16px 0;
+  }
+  .section-title {
+    font-weight: 600;
+    margin-top: 0;
+    margin-bottom: 8px;
+    color: #555;
+    font-size: 0.9em;
+    text-transform: uppercase;
+    letter-spacing: 0.03em;
+  }
+  button {
+    background: #2a6df5;
+    color: white;
+    border: none;
+    padding: 12px 20px;
+    border-radius: 10px;
+    font-size: 1em;
+    cursor: pointer;
+    width: 100%;
+  }
+  button:hover { background: #1c54c9; }
+  .hidden { display: none; }
+  a { color: #2a6df5; }
+  @media (prefers-color-scheme: dark) {
+    .card { border-color: #333; }
+    .tag { background: #26305c; color: #cfd8ff; }
+  }
+
+  ul { list-style: none; padding: 0; }
+  li { padding: 10px 0; border-bottom: 1px solid #eee; }
+  .tag { margin-right: 10px; }
+</style>
 </head>
-<body style="font-family: sans-serif; max-width: 600px; margin: 60px auto; line-height: 1.6;">
-  <p>Todavía no se ha generado ninguna lección.</p>
-  <p>Ve a la pestaña <strong>Actions</strong> de este repositorio y ejecuta
-  el workflow "Daily Spanish Lesson" manualmente (o espera a la próxima
-  ejecución programada) para generar la primera.</p>
+<body>
+  <h1>Lecciones de español</h1>
+  <ul>
+    <li><span class="tag">2026-09-13</span> <a href="lessons/2026-09-13.html">A busy week (Gerund / progressive tenses)</a></li>
+  </ul>
 </body>
 </html>
