@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Lección - 2026-09-14</title>
+<style>
+  :root { color-scheme: light dark; }
+  body {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+    max-width: 700px;
+    margin: 40px auto;
+    padding: 0 20px 60px;
+    line-height: 1.6;
+  }
+  .tag {
+    display: inline-block;
+    background: #e8edff;
+    color: #2a3a7a;
+    padding: 3px 10px;
+    border-radius: 12px;
+    font-size: 0.8em;
+    margin-bottom: 14px;
+  }
+  h1 { font-size: 1.35em; margin-top: 0; }
+  .card {
+    border: 1px solid #ddd;
+    border-radius: 12px;
+    padding: 20px;
+    margin: 16px 0;
+  }
+  .section-title {
+    font-weight: 600;
+    margin-top: 0;
+    margin-bottom: 8px;
+    color: #555;
+    font-size: 0.9em;
+    text-transform: uppercase;
+    letter-spacing: 0.03em;
+  }
+  button {
+    background: #2a6df5;
+    color: white;
+    border: none;
+    padding: 12px 20px;
+    border-radius: 10px;
+    font-size: 1em;
+    cursor: pointer;
+    width: 100%;
+  }
+  button:hover { background: #1c54c9; }
+  .hidden { display: none; }
+  a { color: #2a6df5; }
+  @media (prefers-color-scheme: dark) {
+    .card { border-color: #333; }
+    .tag { background: #26305c; color: #cfd8ff; }
+  }
+</style>
+</head>
+<body>
+  <p><a href="../index.html">&larr; Todas las lecciones</a></p>
+  <div class="tag">2026-09-14</div>
+  <h1>Comparing Spanish cities (Comparatives and superlatives)</h1>
+
+  <div class="card">
+    <p>Of all the cities I have visited, Barcelona is definitely the most beautiful, though Madrid has more museums than any other Spanish city. Barcelona&#x27;s beaches are nicer than Madrid&#x27;s, obviously, since Madrid doesn&#x27;t have any. However, Madrid&#x27;s nightlife is just as lively as Barcelona&#x27;s, if not more so. My friend insists that Seville is the friendliest city in Spain, and that people there are warmer than in the north. I think traffic in Barcelona is worse than in most cities I know, but public transport is better organised. The cost of living in Madrid used to be lower than in Barcelona, but nowadays they are almost the same. Of the three cities, Seville is by far the hottest in summer, and honestly, it can be unbearable. If I had to choose the best one to live in, I would probably pick Valencia, since it has fewer tourists and just as much charm.</p>
+  </div>
+
+  <button id="reveal-btn" onclick="
+    document.getElementById('answer').classList.remove('hidden');
+    document.getElementById('reveal-btn').style.display = 'none';
+  ">
+    He terminado de traducir
+  </button>
+
+  <div id="answer" class="hidden">
+    <div class="card">
+      <div class="section-title">Traducción</div>
+      <p>De todas las ciudades que he visitado, Barcelona es sin duda la más bonita, aunque Madrid tiene más museos que cualquier otra ciudad española. Las playas de Barcelona son más bonitas que las de Madrid, obviamente, ya que Madrid no tiene ninguna. Sin embargo, la vida nocturna de Madrid es tan animada como la de Barcelona, si no más. Mi amiga insiste en que Sevilla es la ciudad más amigable de España, y que la gente allí es más cálida que en el norte. Creo que el tráfico en Barcelona es peor que en la mayoría de las ciudades que conozco, pero el transporte público está mejor organizado. El coste de vida en Madrid solía ser más bajo que en Barcelona, pero hoy en día son casi iguales. De las tres ciudades, Sevilla es, con diferencia, la más calurosa en verano, y sinceramente, puede ser insoportable. Si tuviera que elegir la mejor para vivir, probablemente elegiría Valencia, ya que tiene menos turistas y el mismo encanto.</p>
+    </div>
+    <div class="card">
+      <div class="section-title">Notas de gramática</div>
+      <p>Comparatives (más...que, menos...que, tan...como) and irregular comparative forms (mejor, peor). Superlatives (la más bonita, con diferencia la más calurosa). &#x27;Si no más&#x27; = if not more.</p>
+    </div>
+    <div class="card">
+      <div class="section-title">Notas de vocabulario</div>
+      <p>&#x27;Con diferencia&#x27; = by far. &#x27;Insoportable&#x27; = unbearable. &#x27;Encanto&#x27; = charm.</p>
+    </div>
+  </div>
+</body>
+</html>
