@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Lección - 2026-09-17</title>
+<style>
+  :root { color-scheme: light dark; }
+  body {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+    max-width: 700px;
+    margin: 40px auto;
+    padding: 0 20px 60px;
+    line-height: 1.6;
+  }
+  .tag {
+    display: inline-block;
+    background: #e8edff;
+    color: #2a3a7a;
+    padding: 3px 10px;
+    border-radius: 12px;
+    font-size: 0.8em;
+    margin-bottom: 14px;
+  }
+  h1 { font-size: 1.35em; margin-top: 0; }
+  .card {
+    border: 1px solid #ddd;
+    border-radius: 12px;
+    padding: 20px;
+    margin: 16px 0;
+  }
+  .section-title {
+    font-weight: 600;
+    margin-top: 0;
+    margin-bottom: 8px;
+    color: #555;
+    font-size: 0.9em;
+    text-transform: uppercase;
+    letter-spacing: 0.03em;
+  }
+  button {
+    background: #2a6df5;
+    color: white;
+    border: none;
+    padding: 12px 20px;
+    border-radius: 10px;
+    font-size: 1em;
+    cursor: pointer;
+    width: 100%;
+  }
+  button:hover { background: #1c54c9; }
+  .hidden { display: none; }
+  a { color: #2a6df5; }
+  @media (prefers-color-scheme: dark) {
+    .card { border-color: #333; }
+    .tag { background: #26305c; color: #cfd8ff; }
+  }
+</style>
+</head>
+<body>
+  <p><a href="../index.html">&larr; Todas las lecciones</a></p>
+  <div class="tag">2026-09-17</div>
+  <h1>A missed flight (Pluperfect)</h1>
+
+  <div class="card">
+    <p>By the time I arrived at the airport, my flight had already departed. I couldn&#x27;t believe it, because I had left home with plenty of time, or so I thought. Apparently, there had been a change in the departure gate that I hadn&#x27;t noticed, since I hadn&#x27;t checked my phone for the last hour. The airline staff told me that they had announced the change several times, but I simply hadn&#x27;t heard it because I had been listening to music with my headphones on. By the time I realised what had happened, the plane had already taken off. Luckily, I had bought travel insurance, something I had never done before on previous trips. Thanks to that, I didn&#x27;t have to pay for a new ticket. I learned an important lesson that day: always check your phone regularly at the airport, no matter how confident you feel.</p>
+  </div>
+
+  <button id="reveal-btn" onclick="
+    document.getElementById('answer').classList.remove('hidden');
+    document.getElementById('reveal-btn').style.display = 'none';
+  ">
+    He terminado de traducir
+  </button>
+
+  <div id="answer" class="hidden">
+    <div class="card">
+      <div class="section-title">Traducción</div>
+      <p>Para cuando llegué al aeropuerto, mi vuelo ya había salido. No podía creerlo, porque había salido de casa con mucho tiempo de sobra, o eso pensaba. Al parecer, había habido un cambio en la puerta de embarque que no había notado, ya que no había revisado mi teléfono durante la última hora. El personal de la aerolínea me dijo que habían anunciado el cambio varias veces, pero simplemente no lo había oído porque había estado escuchando música con los auriculares puestos. Para cuando me di cuenta de lo que había pasado, el avión ya había despegado. Por suerte, había comprado un seguro de viaje, algo que nunca había hecho antes en viajes anteriores. Gracias a eso, no tuve que pagar por un billete nuevo. Ese día aprendí una lección importante: siempre revisa tu teléfono regularmente en el aeropuerto, sin importar lo seguro que te sientas.</p>
+    </div>
+    <div class="card">
+      <div class="section-title">Notas de gramática</div>
+      <p>Pluperfect (había salido, había habido, no había notado, habían anunciado, había estado escuchando, había despegado, había comprado, había hecho) for an action completed before another point in the past.</p>
+    </div>
+    <div class="card">
+      <div class="section-title">Notas de vocabulario</div>
+      <p>&#x27;Con tiempo de sobra&#x27; = with plenty of time to spare. &#x27;Al parecer&#x27; = apparently. &#x27;Puerta de embarque&#x27; = departure gate.</p>
+    </div>
+  </div>
+</body>
+</html>
