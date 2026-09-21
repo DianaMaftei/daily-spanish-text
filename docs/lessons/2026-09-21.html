@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Lección - 2026-09-21</title>
+<style>
+  :root { color-scheme: light dark; }
+  body {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+    max-width: 700px;
+    margin: 40px auto;
+    padding: 0 20px 60px;
+    line-height: 1.6;
+  }
+  .tag {
+    display: inline-block;
+    background: #e8edff;
+    color: #2a3a7a;
+    padding: 3px 10px;
+    border-radius: 12px;
+    font-size: 0.8em;
+    margin-bottom: 14px;
+  }
+  h1 { font-size: 1.35em; margin-top: 0; }
+  .card {
+    border: 1px solid #ddd;
+    border-radius: 12px;
+    padding: 20px;
+    margin: 16px 0;
+  }
+  .section-title {
+    font-weight: 600;
+    margin-top: 0;
+    margin-bottom: 8px;
+    color: #555;
+    font-size: 0.9em;
+    text-transform: uppercase;
+    letter-spacing: 0.03em;
+  }
+  button {
+    background: #2a6df5;
+    color: white;
+    border: none;
+    padding: 12px 20px;
+    border-radius: 10px;
+    font-size: 1em;
+    cursor: pointer;
+    width: 100%;
+  }
+  button:hover { background: #1c54c9; }
+  .hidden { display: none; }
+  a { color: #2a6df5; }
+  @media (prefers-color-scheme: dark) {
+    .card { border-color: #333; }
+    .tag { background: #26305c; color: #cfd8ff; }
+  }
+</style>
+</head>
+<body>
+  <p><a href="../index.html">&larr; Todas las lecciones</a></p>
+  <div class="tag">2026-09-21</div>
+  <h1>What matters when learning a language (&#x27;Lo&#x27; neutro)</h1>
+
+  <div class="card">
+    <p>What surprises me most about learning a language is how much your perspective can change. The difficult part isn&#x27;t memorising vocabulary; it&#x27;s understanding how native speakers actually think. What I find most interesting is that some concepts simply don&#x27;t translate directly between languages. The good thing about making mistakes is that you usually remember the correction much better afterwards. What worries me sometimes is that I might reach a plateau and stop improving. The important thing is to keep practising consistently, even when progress feels slow. I&#x27;ve realised that the hardest thing isn&#x27;t grammar, but rather losing the fear of speaking in front of others. What I love about Spanish specifically is how expressive and musical it sounds compared to English. In the end, what really matters is enjoying the process, not just focusing on the final result.</p>
+  </div>
+
+  <button id="reveal-btn" onclick="
+    document.getElementById('answer').classList.remove('hidden');
+    document.getElementById('reveal-btn').style.display = 'none';
+  ">
+    He terminado de traducir
+  </button>
+
+  <div id="answer" class="hidden">
+    <div class="card">
+      <div class="section-title">Traducción</div>
+      <p>Lo que más me sorprende de aprender un idioma es cuánto puede cambiar tu perspectiva. Lo difícil no es memorizar vocabulario; es entender cómo piensan realmente los hablantes nativos. Lo que encuentro más interesante es que algunos conceptos simplemente no se traducen directamente entre idiomas. Lo bueno de cometer errores es que normalmente recuerdas la corrección mucho mejor después. Lo que a veces me preocupa es que pueda llegar a un punto muerto y dejar de mejorar. Lo importante es seguir practicando de manera constante, incluso cuando el progreso se siente lento. Me he dado cuenta de que lo más difícil no es la gramática, sino más bien perder el miedo a hablar delante de otros. Lo que me encanta del español en concreto es lo expresivo y musical que suena comparado con el inglés. Al final, lo que realmente importa es disfrutar el proceso, no solo centrarse en el resultado final.</p>
+    </div>
+    <div class="card">
+      <div class="section-title">Notas de gramática</div>
+      <p>&#x27;Lo&#x27; + adjective expresses an abstract quality (lo difícil, lo bueno, lo importante, lo más difícil). &#x27;Lo que&#x27; is the neutral relative pronoun (&#x27;what/that which&#x27;) used when referring to an idea rather than a specific noun (lo que me sorprende, lo que encuentro, lo que me preocupa, lo que me encanta, lo que realmente importa).</p>
+    </div>
+    <div class="card">
+      <div class="section-title">Notas de vocabulario</div>
+      <p>&#x27;Punto muerto&#x27; = plateau/standstill (literally &#x27;dead point&#x27;). &#x27;No... sino más bien&#x27; = not... but rather. &#x27;Centrarse en&#x27; = to focus on.</p>
+    </div>
+  </div>
+</body>
+</html>
